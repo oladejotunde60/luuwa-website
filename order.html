@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order — Luuwa</title>
+    <meta name="description" content="Place your order with Luuwa. Custom cakes, small chops, plantain chips, zobo, juices, and bead accessories.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="page-body">
+    <!-- Navigation -->
+    <nav class="navbar navbar-solid" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">Luuwa</span>
+                <span class="logo-tag">Flavor • Culture • Craft</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="order.html" class="active">Order Now</a></li>
+                <li><a href="track.html" class="btn-nav-outline">Track Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('luuwa-images/luuwa-product-18.jpeg')"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container page-header-content">
+            <h1><i class="fas fa-shopping-bag"></i> Place Your Order</h1>
+            <p>Fill the form below and submit your order via WhatsApp. We'll confirm and get it ready for you!</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Order</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-section section">
+        <div class="container">
+            <div class="order-grid">
+                <!-- Order Form -->
+                <div class="order-form-wrap">
+                    <form class="order-form" id="orderForm">
+                        <!-- Customer Details -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Customer Details</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" placeholder="e.g. 08012345678" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="deliveryAddress">Delivery Address <span class="required">*</span></label>
+                                    <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Full delivery address" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order Details -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-shopping-cart"></i> Order Details</h3>
+                            
+                            <div class="form-group">
+                                <label>Select Product(s) <span class="required">*</span></label>
+                                <div class="product-checkboxes">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Custom Cake">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-birthday-cake"></i>
+                                            <span>Custom Cake</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Small Chops">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-utensils"></i>
+                                            <span>Small Chops</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Plantain Chips">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-cookie-bite"></i>
+                                            <span>Plantain Chips</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Zobo Drink">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-wine-bottle"></i>
+                                            <span>Zobo Drink</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Fruit Juice">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-glass-cheers"></i>
+                                            <span>Fruit Juice</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Bead Accessories">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-gem"></i>
+                                            <span>Bead Accessories</span>
+                                        </div>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="products" value="Event Catering">
+                                        <div class="checkbox-content">
+                                            <i class="fas fa-concierge-bell"></i>
+                                            <span>Event Catering</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Dynamic product details -->
+                            <div id="cakeDetails" class="conditional-fields" style="display:none;">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="cakeSize">Cake Size</label>
+                                        <select id="cakeSize" name="cakeSize">
+                                            <option value="">Select size</option>
+                                            <option value="6 inches">6 inches</option>
+                                            <option value="8 inches">8 inches</option>
+                                            <option value="10 inches">10 inches</option>
+                                            <option value="12 inches">12 inches</option>
+                                            <option value="Tiered (Multi-layer)">Tiered (Multi-layer)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cakeFlavor">Cake Flavor</label>
+                                        <select id="cakeFlavor" name="cakeFlavor">
+                                            <option value="">Select flavor</option>
+                                            <option value="Vanilla">Vanilla</option>
+                                            <option value="Chocolate">Chocolate</option>
+                                            <option value="Red Velvet">Red Velvet</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Strawberry">Strawberry</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Fruit Cake">Fruit Cake</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cakeInscription">Cake Inscription / Design Details</label>
+                                    <textarea id="cakeInscription" name="cakeInscription" rows="2" placeholder="e.g. 'Happy Birthday Sarah' or describe your design"></textarea>
+                                </div>
+                            </div>
+
+                            <div id="smallChopsDetails" class="conditional-fields" style="display:none;">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="chopsQuantity">Number of Packs/Servings</label>
+                                        <input type="number" id="chopsQuantity" name="chopsQuantity" min="1" placeholder="e.g. 50">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="chopsTypes">Preferred Types</label>
+                                        <input type="text" id="chopsTypes" name="chopsTypes" placeholder="e.g. Spring rolls, Samosa, Puff-puff">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="beadDetails" class="conditional-fields" style="display:none;">
+                                <div class="form-group">
+                                    <label for="beadType">Bead Type / Description</label>
+                                    <textarea id="beadType" name="beadType" rows="2" placeholder="Describe the bead accessory you'd like (bracelet, necklace, etc.)"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quantity">General Quantity</label>
+                                <input type="number" id="quantity" name="quantity" min="1" value="1" placeholder="Quantity">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="deliveryDate">Preferred Delivery Date <span class="required">*</span></label>
+                                    <input type="date" id="deliveryDate" name="deliveryDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="deliveryTime">Preferred Time</label>
+                                    <select id="deliveryTime" name="deliveryTime">
+                                        <option value="">Select time</option>
+                                        <option value="Morning (8am - 12pm)">Morning (8am - 12pm)</option>
+                                        <option value="Afternoon (12pm - 4pm)">Afternoon (12pm - 4pm)</option>
+                                        <option value="Evening (4pm - 8pm)">Evening (4pm - 8pm)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialInstructions">Special Instructions / Notes</label>
+                                <textarea id="specialInstructions" name="specialInstructions" rows="3" placeholder="Any special requests, allergies, or instructions..."></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Payment Section -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-credit-card"></i> Payment</h3>
+                            <div class="payment-info">
+                                <div class="payment-notice">
+                                    <i class="fas fa-info-circle"></i>
+                                    <div>
+                                        <strong>Payment Options:</strong>
+                                        <p>Currently, payment is made via <strong>bank transfer</strong> after order confirmation on WhatsApp. Your order will be confirmed and payment details shared.</p>
+                                        <p class="coming-soon"><i class="fas fa-clock"></i> Online payment gateway coming soon!</p>
+                                    </div>
+                                </div>
+                                <!-- Placeholder for future payment gateway -->
+                                <div class="payment-gateway-placeholder" id="paymentGateway">
+                                    <div class="gateway-coming-soon">
+                                        <i class="fas fa-lock"></i>
+                                        <span>Secure Online Payment</span>
+                                        <span class="badge-soon">Coming Soon</span>
+                                    </div>
+                                    <!-- 
+                                    PAYMENT GATEWAY INTEGRATION PLACEHOLDER
+                                    =====================================
+                                    To integrate a payment gateway (Paystack, Flutterwave, etc.):
+                                    1. Add the gateway's script tag
+                                    2. Add payment form fields here
+                                    3. Update the form submission logic in script.js
+                                    
+                                    Example for Paystack:
+                                    <script src="https://js.paystack.co/v2/inline.js"></script>
+                                    
+                                    Example for Flutterwave:
+                                    <script src="https://checkout.flutterwave.com/v3.js"></script>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitOrder">
+                                <i class="fab fa-whatsapp"></i> Submit Order via WhatsApp
+                            </button>
+                            <p class="form-note">
+                                <i class="fas fa-shield-alt"></i> Your order will be sent to our WhatsApp for quick confirmation
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary Sidebar -->
+                <div class="order-sidebar">
+                    <div class="sidebar-card sticky">
+                        <h3><i class="fas fa-receipt"></i> Order Summary</h3>
+                        <div id="orderSummary" class="order-summary-content">
+                            <p class="empty-summary">Select products to see your order summary</p>
+                        </div>
+
+                        <div class="sidebar-help">
+                            <h4><i class="fas fa-question-circle"></i> Need Help?</h4>
+                            <p>Chat with us directly on WhatsApp for any questions about your order.</p>
+                            <a href="https://wa.me/2347032947078?text=Hi%20Luuwa!%20I%20need%20help%20with%20my%20order." class="btn btn-outline btn-block btn-sm">
+                                <i class="fab fa-whatsapp"></i> Chat with Us
+                            </a>
+                        </div>
+
+                        <div class="sidebar-info">
+                            <h4><i class="fas fa-truck"></i> Delivery Info</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Same-day delivery available (Lagos)</li>
+                                <li><i class="fas fa-check"></i> Nationwide shipping available</li>
+                                <li><i class="fas fa-check"></i> Track your order status online</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luuwa. All rights reserved. | Crafted with <i class="fas fa-heart" style="color: var(--primary)"></i> in Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2347032947078?text=Hello%20Luuwa!%20I'd%20like%20to%20place%20an%20order." class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

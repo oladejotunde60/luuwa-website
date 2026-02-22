@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luuwa — Premium Food, Drinks & Handcrafted Accessories</title>
+    <meta name="description" content="Luuwa brings flavor, creativity, and culture together. Custom cakes, small chops, plantain chips, zobo drinks, fruit juices, and handcrafted bead accessories.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">LUUWA</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">Luuwa</span>
+                <span class="logo-tag">Flavor • Culture • Craft</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="order.html" class="btn-nav">Order Now</a></li>
+                <li><a href="track.html" class="btn-nav-outline">Track Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('luuwa-images/luuwa-product-1.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('luuwa-images/luuwa-product-5.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('luuwa-images/luuwa-product-10.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('luuwa-images/luuwa-product-15.jpeg')"></div>
+            <div class="hero-slide" style="background-image: url('luuwa-images/luuwa-product-20.jpeg')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle" data-aos="fade-up">Welcome to</p>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                <span class="script-font">Luuwa</span>
+            </h1>
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="400">
+                Premium food, refreshing drinks & handcrafted accessories — bringing flavor, creativity, and culture together.
+            </p>
+            <div class="hero-btns" data-aos="fade-up" data-aos-delay="600">
+                <a href="order.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-shopping-bag"></i> Order Now
+                </a>
+                <a href="#products" class="btn btn-outline btn-lg">
+                    <i class="fas fa-eye"></i> Explore Products
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <!-- Slider Controls -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-birthday-cake"></i>
+                <div>
+                    <span class="stat-num" data-count="500">0</span>+
+                    <span class="stat-label">Cakes Delivered</span>
+                </div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-smile-beam"></i>
+                <div>
+                    <span class="stat-num" data-count="1200">0</span>+
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-star"></i>
+                <div>
+                    <span class="stat-num" data-count="300">0</span>+
+                    <span class="stat-label">Events Catered</span>
+                </div>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-gem"></i>
+                <div>
+                    <span class="stat-num" data-count="150">0</span>+
+                    <span class="stat-label">Bead Designs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images" data-aos="fade-right">
+                    <div class="about-img-main">
+                        <img src="luuwa-images/luuwa-product-2.jpeg" alt="Luuwa Products">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="luuwa-images/luuwa-product-7.jpeg" alt="Luuwa Creations">
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-year">EST.</span>
+                        <span class="badge-num">2024</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">Crafted with Love, <br><span class="accent">Served with Passion</span></h2>
+                    <p class="about-text">
+                        At <strong>Luuwa</strong>, we bring flavor, creativity, and culture together to deliver unforgettable food and lifestyle experiences. We specialize in crafting premium, freshly made products that cater to both everyday cravings and special occasions.
+                    </p>
+                    <p class="about-text">
+                        From beautifully designed custom cakes to delicious small chops, crunchy plantain chips, refreshing zobo and fruit juices, and handcrafted bead accessories — every product is made with attention to detail, quality ingredients, and a passion for excellence.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Freshly Made to Order</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Hygienic Packaging</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fast & Reliable Delivery</span>
+                        </div>
+                    </div>
+                    <a href="order.html" class="btn btn-primary">
+                        <i class="fas fa-shopping-bag"></i> Place an Order
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our <span class="accent">Products</span></h2>
+                <p class="section-desc">Everything crafted with love, creativity, and the finest ingredients</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Custom Cakes -->
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-3.jpeg" alt="Custom Cakes">
+                        <div class="product-overlay">
+                            <a href="order.html?product=custom-cakes" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-birthday-cake"></i></div>
+                        <h3>Custom Cakes</h3>
+                        <p>Beautifully designed cakes tailored to celebrate life's most important moments — birthdays, weddings, anniversaries, and more.</p>
+                        <a href="order.html?product=custom-cakes" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Small Chops -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-8.jpeg" alt="Small Chops">
+                        <div class="product-overlay">
+                            <a href="order.html?product=small-chops" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Small Chops</h3>
+                        <p>A rich variety of delicious small chops perfect for events, parties, corporate gatherings, and every celebration.</p>
+                        <a href="order.html?product=small-chops" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Plantain Chips -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-12.jpeg" alt="Plantain Chips">
+                        <div class="product-overlay">
+                            <a href="order.html?product=plantain-chips" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-cookie-bite"></i></div>
+                        <h3>Plantain Chips</h3>
+                        <p>Crunchy, hygienically packaged plantain chips — a healthier, flavorful alternative for everyday snacking.</p>
+                        <a href="order.html?product=plantain-chips" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Zobo & Juices -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-16.jpeg" alt="Zobo & Fruit Juices">
+                        <div class="product-overlay">
+                            <a href="order.html?product=drinks" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-glass-cheers"></i></div>
+                        <h3>Zobo & Fruit Juices</h3>
+                        <p>Refreshing, naturally brewed zobo and fruit juices — your go-to drinks for hydration and delight.</p>
+                        <a href="order.html?product=drinks" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Bead Accessories -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-21.jpeg" alt="Handcrafted Beads">
+                        <div class="product-overlay">
+                            <a href="order.html?product=beads" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-gem"></i></div>
+                        <h3>Handcrafted Beads</h3>
+                        <p>Stylish, culturally inspired bead accessories that add elegance and uniqueness to any look.</p>
+                        <a href="order.html?product=beads" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Event Catering -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-img">
+                        <img src="luuwa-images/luuwa-product-25.jpeg" alt="Event Catering">
+                        <div class="product-overlay">
+                            <a href="order.html?product=catering" class="btn btn-sm btn-white">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-icon"><i class="fas fa-concierge-bell"></i></div>
+                        <h3>Event Catering</h3>
+                        <p>Full-service catering for weddings, birthdays, corporate events, and special occasions.</p>
+                        <a href="order.html?product=catering" class="product-link">Order <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax CTA -->
+    <section class="parallax-cta">
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content" data-aos="zoom-in">
+            <h2>Craving Something <span class="script-font">Delicious?</span></h2>
+            <p>Whether it's a custom cake for your celebration, small chops for your event, or refreshing drinks — we've got you covered!</p>
+            <a href="order.html" class="btn btn-primary btn-lg">
+                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Gallery</span>
+                <h2 class="section-title">Feast Your <span class="accent">Eyes</span></h2>
+                <p class="section-desc">A visual showcase of our finest creations</p>
+            </div>
+
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cakes">Cakes</button>
+                <button class="filter-btn" data-filter="chops">Small Chops</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="beads">Beads</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item cakes" data-aos="fade-up">
+                    <img src="luuwa-images/luuwa-product-1.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item cakes" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-2.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item chops" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-3.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item cakes" data-aos="fade-up" data-aos-delay="150">
+                    <img src="luuwa-images/luuwa-product-4.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item chops" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-5.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item drinks" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-6.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item snacks" data-aos="fade-up" data-aos-delay="150">
+                    <img src="luuwa-images/luuwa-product-7.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item chops" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-8.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item beads" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-9.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item drinks" data-aos="fade-up" data-aos-delay="150">
+                    <img src="luuwa-images/luuwa-product-10.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item snacks" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-11.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item cakes" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-13.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item beads" data-aos="fade-up" data-aos-delay="150">
+                    <img src="luuwa-images/luuwa-product-14.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item drinks" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-15.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item cakes" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-17.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item beads" data-aos="fade-up" data-aos-delay="150">
+                    <img src="luuwa-images/luuwa-product-19.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item snacks" data-aos="fade-up" data-aos-delay="50">
+                    <img src="luuwa-images/luuwa-product-22.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item chops" data-aos="fade-up" data-aos-delay="100">
+                    <img src="luuwa-images/luuwa-product-24.jpeg" alt="Luuwa Creation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="why-us section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why Luuwa</span>
+                <h2 class="section-title">Why Choose <span class="accent">Us</span></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up">
+                    <div class="why-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We use only the freshest, highest-quality ingredients in everything we make.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Creative Designs</h3>
+                    <p>Each product is crafted with artistic attention to detail and creativity.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Hygienic Process</h3>
+                    <p>All products are prepared and packaged under strict hygiene standards.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Reliable Delivery</h3>
+                    <p>We deliver your orders on time, every time — fresh and ready to enjoy.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Made with Love</h3>
+                    <p>Every product is infused with passion, dedication, and love.</p>
+                </div>
+                <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Affordable Prices</h3>
+                    <p>Premium quality at prices that won't break the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our <span class="accent">Customers Say</span></h2>
+                <p class="section-desc">Real feedback from satisfied customers</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The cake Luuwa made for my wedding was absolutely stunning! Not only was it beautiful, but it tasted amazing. Everyone at the reception was asking who made it!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AO</div>
+                            <div>
+                                <h4>Adebola O.</h4>
+                                <span>Wedding Cake</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Their small chops are the best I've ever tasted! I ordered for my company's end-of-year party and the guests couldn't stop talking about it. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CN</div>
+                            <div>
+                                <h4>Chioma N.</h4>
+                                <span>Small Chops</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"The plantain chips are so addictive! And the zobo is the best I've ever had. I now order monthly. Luuwa has truly become my go-to for snacks and drinks."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">TM</div>
+                            <div>
+                                <h4>Tunde M.</h4>
+                                <span>Snacks & Drinks</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I bought bead accessories from Luuwa as gifts for my bridesmaids. They were so beautiful and unique — everyone loved them! The craftsmanship is truly incredible."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">FK</div>
+                            <div>
+                                <h4>Funke K.</h4>
+                                <span>Bead Accessories</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="test-btn" id="testPrev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="test-btn" id="testNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Approved Customer Reviews -->
+            <div class="approved-reviews" id="approvedReviews">
+                <h3 data-aos="fade-up">Customer Reviews</h3>
+                <div class="reviews-list" id="reviewsList">
+                    <!-- Reviews loaded from localStorage -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Simple & Easy</span>
+                <h2 class="section-title">How to <span class="accent">Order</span></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step" data-aos="fade-up">
+                    <div class="step-num">01</div>
+                    <div class="step-icon"><i class="fas fa-list-alt"></i></div>
+                    <h3>Choose Products</h3>
+                    <p>Browse our menu and select the items you'd love to order.</p>
+                </div>
+                <div class="step-arrow" data-aos="fade-up"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-num">02</div>
+                    <div class="step-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h3>Place Order</h3>
+                    <p>Fill the order form and submit via WhatsApp for confirmation.</p>
+                </div>
+                <div class="step-arrow" data-aos="fade-up"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-num">03</div>
+                    <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                    <h3>Make Payment</h3>
+                    <p>Complete payment via bank transfer (payment gateway coming soon!).</p>
+                </div>
+                <div class="step-arrow" data-aos="fade-up"><i class="fas fa-long-arrow-alt-right"></i></div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-num">04</div>
+                    <div class="step-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Get Delivered</h3>
+                    <p>Sit back and relax! We'll prepare and deliver your order fresh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="accent">Us</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/2347032947078">+234 703 294 7078</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+2347032947078">+234 703 294 7078</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hello@luuwa.com">hello@luuwa.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="socials">
+                            <a href="#" class="social-icon" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="Twitter/X" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="TikTok" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon" aria-label="Snapchat" title="Snapchat"><i class="fab fa-snapchat-ghost"></i></a>
+                            <a href="https://wa.me/2347032947078" class="social-icon" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Contact Form -->
+                <div class="contact-form-wrap" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="contactName" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contactMessage" rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-main">Luuwa</span>
+                        <span class="logo-tag">Flavor • Culture • Craft</span>
+                    </a>
+                    <p>Bringing flavor, creativity, and culture together to deliver unforgettable food and lifestyle experiences.</p>
+                    <div class="socials footer-socials">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/2347032947078" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Products</h4>
+                    <ul>
+                        <li><a href="order.html?product=custom-cakes">Custom Cakes</a></li>
+                        <li><a href="order.html?product=small-chops">Small Chops</a></li>
+                        <li><a href="order.html?product=plantain-chips">Plantain Chips</a></li>
+                        <li><a href="order.html?product=drinks">Zobo & Juices</a></li>
+                        <li><a href="order.html?product=beads">Bead Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer</h4>
+                    <ul>
+                        <li><a href="order.html">Place Order</a></li>
+                        <li><a href="track.html">Track Order</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#testimonials">Leave Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luuwa. All rights reserved. | Crafted with <i class="fas fa-heart" style="color: var(--primary)"></i> in Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2347032947078?text=Hello%20Luuwa!%20I'd%20like%20to%20place%20an%20order." class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

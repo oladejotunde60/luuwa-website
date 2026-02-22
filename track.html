@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order — Luuwa</title>
+    <meta name="description" content="Track your Luuwa order status. View delivery updates and share your feedback.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="page-body">
+    <!-- Navigation -->
+    <nav class="navbar navbar-solid" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-main">Luuwa</span>
+                <span class="logo-tag">Flavor • Culture • Craft</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="track.html" class="active">Track Order</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-bg" style="background-image: url('luuwa-images/luuwa-product-26.jpeg')"></div>
+        <div class="page-header-overlay"></div>
+        <div class="container page-header-content">
+            <h1><i class="fas fa-map-marker-alt"></i> Track Your Order</h1>
+            <p>Enter your order ID to check the current status of your order</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Track Order</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Track Order Section -->
+    <section class="track-section section">
+        <div class="container">
+            <!-- Order Tracking Search -->
+            <div class="track-search-wrap">
+                <div class="track-search-card">
+                    <h2><i class="fas fa-search"></i> Find Your Order</h2>
+                    <p>Enter your Order ID (received via WhatsApp after placing your order)</p>
+                    <form class="track-form" id="trackForm">
+                        <div class="track-input-group">
+                            <input type="text" id="orderIdInput" placeholder="Enter Order ID (e.g. LUW-20260222-001)" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Track
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Quick lookup by phone -->
+                    <div class="track-alt">
+                        <span>or</span>
+                    </div>
+                    <form class="track-form" id="trackPhoneForm">
+                        <div class="track-input-group">
+                            <input type="tel" id="phoneInput" placeholder="Enter your phone number">
+                            <button type="submit" class="btn btn-outline">
+                                <i class="fas fa-phone"></i> Find Orders
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Order Status Display (Hidden initially) -->
+            <div class="order-status-wrap" id="orderStatusWrap" style="display:none;">
+                <div class="order-status-card">
+                    <div class="order-status-header">
+                        <div>
+                            <h3>Order <span id="displayOrderId" class="order-id-display"></span></h3>
+                            <p id="orderDate" class="order-date"></p>
+                        </div>
+                        <span class="status-badge" id="statusBadge"></span>
+                    </div>
+
+                    <!-- Order Progress Timeline -->
+                    <div class="order-timeline">
+                        <div class="timeline-step" id="step-received">
+                            <div class="timeline-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Order Received</h4>
+                                <p>Your order has been received and is being reviewed</p>
+                                <span class="timeline-time" id="time-received"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" id="step-confirmed">
+                            <div class="timeline-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Order Confirmed</h4>
+                                <p>Your order has been confirmed and payment received</p>
+                                <span class="timeline-time" id="time-confirmed"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" id="step-preparing">
+                            <div class="timeline-icon">
+                                <i class="fas fa-blender"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Preparing</h4>
+                                <p>Your order is being freshly prepared with love</p>
+                                <span class="timeline-time" id="time-preparing"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" id="step-ready">
+                            <div class="timeline-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Ready for Delivery</h4>
+                                <p>Your order is packaged and ready to go</p>
+                                <span class="timeline-time" id="time-ready"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" id="step-transit">
+                            <div class="timeline-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Out for Delivery</h4>
+                                <p>Your order is on its way to you</p>
+                                <span class="timeline-time" id="time-transit"></span>
+                            </div>
+                        </div>
+                        <div class="timeline-step" id="step-delivered">
+                            <div class="timeline-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Delivered</h4>
+                                <p>Your order has been delivered. Enjoy!</p>
+                                <span class="timeline-time" id="time-delivered"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Details -->
+                    <div class="order-details-card">
+                        <h4><i class="fas fa-list-alt"></i> Order Details</h4>
+                        <div class="order-detail-grid" id="orderDetailsGrid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="order-actions">
+                        <a href="https://wa.me/2347032947078" class="btn btn-outline">
+                            <i class="fab fa-whatsapp"></i> Contact Support
+                        </a>
+                        <button class="btn btn-primary" id="leaveFeedbackBtn" style="display:none;">
+                            <i class="fas fa-star"></i> Leave Feedback
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Orders by Phone (Hidden initially) -->
+            <div class="orders-list-wrap" id="ordersListWrap" style="display:none;">
+                <h3><i class="fas fa-list"></i> Your Orders</h3>
+                <div class="orders-table-wrap">
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Products</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersTableBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Feedback Form (Hidden initially) -->
+            <div class="feedback-wrap" id="feedbackWrap" style="display:none;">
+                <div class="feedback-card">
+                    <h3><i class="fas fa-comment-dots"></i> Leave Your Feedback</h3>
+                    <p>We'd love to hear from you! Your feedback helps us improve and will be displayed on our website once approved.</p>
+                    <form class="feedback-form" id="feedbackForm">
+                        <input type="hidden" id="feedbackOrderId" value="">
+                        <div class="form-group">
+                            <label for="feedbackName">Your Name <span class="required">*</span></label>
+                            <input type="text" id="feedbackName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Rating <span class="required">*</span></label>
+                            <div class="star-rating" id="starRating">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </div>
+                            <input type="hidden" id="ratingValue" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackProduct">Product Ordered</label>
+                            <input type="text" id="feedbackProduct" placeholder="Which product?">
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackText">Your Review <span class="required">*</span></label>
+                            <textarea id="feedbackText" rows="4" placeholder="Share your experience with Luuwa..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="feedbackConsent" required>
+                                <span>I agree that my review can be displayed on Luuwa's website after approval</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Submit Feedback
+                        </button>
+                        <p class="form-note"><i class="fas fa-info-circle"></i> Your review will appear on the website after approval by our team.</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- No Order Found (Hidden initially) -->
+            <div class="no-order-wrap" id="noOrderWrap" style="display:none;">
+                <div class="no-order-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Order Not Found</h3>
+                    <p>We couldn't find an order with that ID. Please double-check your order ID or contact us for help.</p>
+                    <div class="no-order-actions">
+                        <a href="https://wa.me/2347032947078?text=Hi%20Luuwa!%20I%20need%20help%20finding%20my%20order." class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Contact Support
+                        </a>
+                        <a href="order.html" class="btn btn-outline">
+                            <i class="fas fa-shopping-bag"></i> Place New Order
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demo Data Notice -->
+            <div class="demo-notice">
+                <div class="demo-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <strong>Demo Mode</strong>
+                        <p>Try tracking with these sample Order IDs: <code>LUW-20260222-001</code>, <code>LUW-20260220-002</code>, <code>LUW-20260218-003</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luuwa. All rights reserved. | Crafted with <i class="fas fa-heart" style="color: var(--primary)"></i> in Nigeria</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2347032947078?text=Hello%20Luuwa!%20I%20need%20help%20with%20my%20order." class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
