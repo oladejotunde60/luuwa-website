@@ -49,12 +49,16 @@ html {
     scroll-padding-top: 80px;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--text);
     background: var(--white);
     line-height: 1.7;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
